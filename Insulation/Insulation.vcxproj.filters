@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{63225cf1-b088-4dc0-830c-f259829ebefc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Insulation">
+      <UniqueIdentifier>{e8ef1cba-64d4-4722-af5d-c8f1aeb540dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Insulation\Core.h">
+      <Filter>src\Insulation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Insulation\Application.h">
+      <Filter>src\Insulation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Insulation.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Insulation\EntryPoint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Insulation\Application.cpp">
+      <Filter>src\Insulation</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
