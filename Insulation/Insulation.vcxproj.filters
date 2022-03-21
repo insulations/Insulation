@@ -9,20 +9,42 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Insulation\Core.h">
+    <ClInclude Include="src\Insulation\Core\Core.h">
       <Filter>src\Insulation</Filter>
     </ClInclude>
-    <ClInclude Include="src\Insulation\Application.h">
+    <ClInclude Include="src\Insulation\Core\Application.h">
       <Filter>src\Insulation</Filter>
     </ClInclude>
     <ClInclude Include="src\Insulation.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\Insulation\EntryPoint.h" />
+    <ClInclude Include="src\Insulation\Core\EntryPoint.h" />
+    <ClInclude Include="src\Insulation\Core\Log.h" />
+    <ClInclude Include="src\Insulation\Event\Event.h" />
+    <ClInclude Include="src\Insulation\Event\KeyEvent.h" />
+    <ClInclude Include="src\Insulation\Event\MouseEvent.h" />
+    <ClInclude Include="src\Insulation\Event\ApplicationEvent.h" />
+    <ClInclude Include="src\Ins_pch.h" />
+    <ClInclude Include="src\Insulation\Core\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\Insulation\Core\Assert.h" />
+    <ClInclude Include="src\Insulation\Core\Layer.h" />
+    <ClInclude Include="src\Insulation\Core\LayerStack.h" />
+    <ClInclude Include="src\Insulation\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Platform\OpenGL\imgui_impl_opengl3.h" />
+    <ClInclude Include="src\Platform\OpenGL\imgui_impl_opengl3_loader.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Insulation\Application.cpp">
+    <ClCompile Include="src\Insulation\Core\Application.cpp">
       <Filter>src\Insulation</Filter>
     </ClCompile>
+    <ClCompile Include="src\Insulation\Core\Log.cpp" />
+    <ClCompile Include="src\Ins_pch.cpp" />
+    <ClCompile Include="src\Insulation\Core\Window.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
+    <ClCompile Include="src\Insulation\Core\Layer.cpp" />
+    <ClCompile Include="src\Insulation\Core\LayerStack.cpp" />
+    <ClCompile Include="src\Insulation\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\imgui_impl_opengl3.cpp" />
   </ItemGroup>
 </Project>

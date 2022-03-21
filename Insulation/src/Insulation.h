@@ -2,8 +2,10 @@
 
 //For use by Insulation applications
 
-#include "Insulation/Application.h"
+#include "Insulation/Core/Application.h"
+#include "Insulation/Core/Log.h"
+#include "Insulation/ImGui/ImGuiLayer.h"
 
 //---Entry Point-----------
-#include"Insulation/EntryPoint.h"
+#include"Insulation/Core/EntryPoint.h"
 //--------------------------

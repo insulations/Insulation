@@ -59,11 +59,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>INS_PLATFORM_WINDOWS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Insulation/src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Insulation\Insulation\Insulation\vendor\imgui;$(SolutionDir)Insulation/src;$(SolutionDir)Insulation\vendor\spdlog\include;E:\Insulation\Insulation\Insulation\vendor\glfw-3.3.6\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Insulation\Insulation\Insulation\vendor\imgui\bin;E:\Insulation\Insulation\Insulation\vendor\glad\bin;E:\Insulation\Insulation\Insulation\vendor\glfw-3.3.6\build\src\Debug;E:\Insulation\Insulation\bin\Debug-x64\Insulation;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>imgui.lib;glad.lib;OpenGL32.lib;glfw3.lib;Insulation.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -74,7 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>INS_PLATFORM_WINDOWS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Insulation/src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Insulation/src;$(SolutionDir)Insulation\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
